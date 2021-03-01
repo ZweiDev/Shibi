@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  shibi:
+    build: .
+    environment:
+      - HTTP_PORT=5080
+      - GRPC_PORT=5111
+    ports:
+      - "5080:5080"
+      - "5111:5111"
